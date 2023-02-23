@@ -1,16 +1,31 @@
-.container {
+body {
     background-color: black;
+    padding: 10%;
 }
 
-.sidebar {
+#container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vw;
+    width: 100vw;
+}
+
+#sidebar {
     background-color: lightskyblue;
     color: white;
+    display: grid;
+    grid-row: 1 / 6;
 }
 
-.header {
+#header {
     background-color: white;
+    display: grid;
+    grid-column: 2 / 5;
 }
 
-.main-content {
+#main-content {
     background-color: lightgrey;
+    grid-area: 2 / 2 / 6 / 5;
 }
