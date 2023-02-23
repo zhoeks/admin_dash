@@ -1,0 +1,16 @@
+.container {
+    background-color: black;
+}
+
+.sidebar {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.header {
+    background-color: white;
+}
+
+.main-content {
+    background-color: lightgrey;
+}
