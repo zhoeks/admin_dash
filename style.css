@@ -1,7 +1,7 @@
 body {
     background-color: black;
     padding: 5% 0% 5% 0%;
-    max-height: 100vh;
+    max-height: fit-content;
     max-width: 100vw;
 }
 
@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
 }
 
@@ -33,12 +33,18 @@ body {
     padding: 1vw 2vw;
 }
 
+input {
+    width: 80%;
+    border-radius: 15px;
+    background-color: #e0f2fe;
+}
+
 #main-content {
     display: grid;
     background-color: lightgrey;
     grid-area: 2 / 2 / 6 / 5;
     grid-template-columns: 6fr 2fr;
-    gap: 4px;
+    gap: 4vh;
 }
 
 #sidebar > * {
@@ -70,25 +76,62 @@ body {
     gap: 3px;
 }
 
+.secondRow > #description {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondRow > #description > #user {
+    font-size: 3.5vw;
+}
+
 #leftSec {
     display: grid;
     grid-template-rows: 5% 95%;
     gap: 3px;
     padding: 0px 10px;
+    text-align: start;
 }
 
+h4 {
+    text-align: start;
+    margin: auto;
+    padding: 10px;
+}
+
+.projectBox > h4 {
+    text-align: start;
+    margin: auto;
+    padding: 20px;
+}
 
 #leftSec > #projectBoxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: auto;
-    gap: 40px;
+    gap: 2vw;
+}
+
+p {
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: 35px;
 }
 
 .projectBox {
     background-color: white;
     border-radius: 5px;
     box-shadow: 2px 2px 0px 0px grey;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding-bottom: none;
+    max-height: 28vh;
+    gap: 2px;
+}
+
+.boxButton > svg {
+    width: 3vw;
+    height: 3vh;
 }
 
 #rightSec {
@@ -143,6 +186,6 @@ button {
 }
 
 #profileBig > svg {
-    width: 150%;
-    height: 150%;
+    width: 5vw;
+    height: 5vw;
 }
