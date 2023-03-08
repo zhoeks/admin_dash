@@ -45,6 +45,7 @@ input {
     grid-area: 2 / 2 / 6 / 5;
     grid-template-columns: 6fr 2fr;
     gap: 4vh;
+    max-height: fit-content;
 }
 
 #sidebar > * {
@@ -91,6 +92,7 @@ input {
     gap: 3px;
     padding: 0px 10px;
     text-align: start;
+    max-height: 95%;
 }
 
 h4 {
@@ -102,7 +104,6 @@ h4 {
 .projectBox > h4 {
     text-align: start;
     margin: auto;
-    padding: 20px;
 }
 
 #leftSec > #projectBoxes {
@@ -110,12 +111,14 @@ h4 {
     grid-template-columns: 1fr 1fr;
     overflow: auto;
     gap: 2vw;
+    max-height: 100%;
 }
 
 p {
     word-break: break-all;
     word-wrap: break-word;
-    padding: 35px;
+    padding: 20px;
+    font-size: 2vw
 }
 
 .projectBox {
@@ -125,7 +128,8 @@ p {
     display: grid;
     grid-template-rows: 2fr 1fr;
     padding-bottom: none;
-    max-height: 28vh;
+    max-width: 100%;
+    max-height: calc(max-width / 2);
     gap: 2px;
 }
 
@@ -139,6 +143,7 @@ p {
     grid-template-rows: 5% 45% 5% 45%;
     padding: 0px 10px;
     gap: 4px;
+    max-height: 95%;
 }
 
 #rightSec > #siteAnnounce, #trends {
