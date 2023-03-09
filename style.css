@@ -129,13 +129,19 @@ p {
     grid-template-rows: 2fr 1fr;
     padding-bottom: none;
     max-width: 100%;
-    max-height: calc(max-width / 2);
     gap: 2px;
 }
 
 .boxButton > svg {
     width: 3vw;
     height: 3vh;
+}
+
+.boxIcons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 5%;
 }
 
 #rightSec {
@@ -193,4 +199,20 @@ button {
 #profileBig > svg {
     width: 5vw;
     height: 5vw;
+}
+
+#siteAnnounce > .news > p {
+    font-size: 1em;
+    padding: 5%
+}
+
+#siteAnnounce > .news:nth-child(2) {
+    border-style: dashed;
+    border-right: black;
+    border-left: black;
+    border-width: 2px;
+}
+
+.trendInfo > p {
+    font-size: 1.5vh;
 }
